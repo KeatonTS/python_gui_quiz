@@ -69,7 +69,7 @@ class QuizUI:
             q_text = self.quiz.next_question()
         except IndexError:
             self.canvas.itemconfig(self.question_text, text=f"Your score is: {self.score}/10\n\n"
-                                                            f"Restart for more questions!", fill='black', justify='center')
+                                                            "Restart for more questions!", fill='black', justify='center')
             self.score_label.destroy()
             self.true_button.destroy()
             self.false_button.destroy()
